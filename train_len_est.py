@@ -29,10 +29,10 @@ if __name__=='__main__':
     os.makedirs(opt.log_dir,exist_ok=True)
 
     if opt.dataset == 'kit':
-        opt.data_root = '../xinglin-data/dataset/kit'
+        opt.data_root = '../xinglin-data/dataset'
         opt.motion_dir = pjoin(opt.data_root, 'new_joint_vecs')
         if opt.bert == 'true':
-            opt.text_dir = pjoin(opt.data_root, 'texts2/texts2')
+            opt.text_dir = pjoin(opt.data_root, 'texts2b')
             dim_word = 3072
         else:
             opt.text_dir = pjoin(opt.data_root, 'texts')
